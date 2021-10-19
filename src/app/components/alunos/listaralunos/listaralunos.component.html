@@ -1,0 +1,28 @@
+<h1 class="my-3 text-primary">
+  Lisita de Alunos
+</h1>
+
+<div class="card shadow">
+  <table class="table table-responsive table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>RU</th>
+        <th>Curso</th>
+        <th>Nascimento</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let alunos of listaAlunos">
+        <td>{{alunos.id}}</td>
+        <td>{{alunos.nome}}</td>
+        <td>{{alunos.ru}}</td>
+        <td>{{alunos.curso}}</td>
+        <td>{{alunos.nascimento}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
